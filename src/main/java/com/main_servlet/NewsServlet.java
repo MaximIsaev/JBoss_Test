@@ -30,7 +30,7 @@ public class NewsServlet extends HttpServlet {
         XMLParser.parser();
 
         PrintWriter out = resp.getWriter();
-        out.println("Deploy is working from IDEA on Tomcat ");
+        out.println("Deploy is working from IDEA on JBoss ");
 
         out.println();
        // JSONContainer.displayJsonObjects(out);
