@@ -9,9 +9,20 @@
         <servlet-class>com.main_servlet.NewsServlet</servlet-class>
     </servlet>
 
+
     <servlet-mapping>
         <servlet-name>newsServlet</servlet-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>/servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>newsServlet2</servlet-name>
+        <servlet-class>com.main_servlet.NewsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>newsServlet2</servlet-name>
+        <url-pattern>/servlet2</url-pattern>
     </servlet-mapping>
 
 </web-app>

@@ -30,11 +30,16 @@ public class NewsServlet extends HttpServlet {
         XMLParser.parser();
 
         PrintWriter out = resp.getWriter();
-        out.println("Deploy is working");
+        out.println("Deploy is working from IDEA on Tomcat ");
 
         out.println();
-        JSONContainer.displayJsonObjects(out);
+       // JSONContainer.displayJsonObjects(out);
 
+    }
+
+    @Override
+    public void init(ServletConfig config) throws ServletException{
+        System.out.println("Init called");
     }
 
 
